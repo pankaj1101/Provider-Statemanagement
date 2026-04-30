@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sample/view_model/completed_task.dart';
 import 'package:sample/view_model/todo_list_view_model.dart';
 
 class TodoList extends StatelessWidget {
@@ -8,6 +9,7 @@ class TodoList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
         title: Text('TODO'),
         actions: [
@@ -61,6 +63,18 @@ class TodoList extends StatelessWidget {
             );
           },
         ),
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (BuildContext context) => CompletedTask(),
+            ),
+          );
+        },
+        child: Icon(Icons.task),
       ),
     );
   }

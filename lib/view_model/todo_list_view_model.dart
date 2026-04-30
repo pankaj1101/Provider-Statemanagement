@@ -39,4 +39,7 @@ class TodoListViewModel extends ChangeNotifier {
   int get selectedTodosCount => _selectedTodo.length;
 
   bool isChecked(task) => _selectedTodo.contains(task);
+
+  // function - isEmpty
+  bool get isEmptyselectedTodosCount => _selectedTodo.isEmpty;
 }
