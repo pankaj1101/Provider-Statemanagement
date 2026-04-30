@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sample/view/counter_view.dart';
 import 'package:sample/view_model/counter_view_model.dart';
 import 'package:sample/view_model/slider_view_model.dart';
-import 'package:sample/view_model/todo_list.dart';
+import 'package:sample/view/todo_list.dart';
 import 'package:sample/view_model/todo_list_view_model.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           create: (_) => TodoListViewModel(),
         ),
       ],
-      child: MaterialApp(debugShowCheckedModeBanner: false, home: TodoList()),
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: CounterView()),
     );
   }
 }

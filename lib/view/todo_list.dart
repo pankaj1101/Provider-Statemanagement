@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sample/view_model/completed_task.dart';
+import 'package:sample/view/completed_task.dart';
 import 'package:sample/view_model/todo_list_view_model.dart';
 
 class TodoList extends StatelessWidget {
