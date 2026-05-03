@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sample/view/task_view.dart';
+import 'package:sample/view/recipes_view.dart';
 import 'package:sample/view_model/counter_view_model.dart';
+import 'package:sample/view_model/receipe_view_model.dart';
 import 'package:sample/view_model/slider_view_model.dart';
 import 'package:sample/view_model/task_view_model.dart';
 import 'package:sample/view_model/todo_list_view_model.dart';
@@ -27,8 +28,14 @@ class MyApp extends StatelessWidget {
           create: (_) => TodoListViewModel(),
         ),
         ChangeNotifierProvider<TaskViewModel>(create: (_) => TaskViewModel()),
+        ChangeNotifierProvider<ReceipeViewModel>(
+          create: (_) => ReceipeViewModel(),
+        ),
       ],
-      child: MaterialApp(debugShowCheckedModeBanner: false, home: TaskView()),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: RecipesView(),
+      ),
     );
   }
 }

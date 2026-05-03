@@ -7,7 +7,6 @@ class SliderView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('line 15');
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(16.0),
