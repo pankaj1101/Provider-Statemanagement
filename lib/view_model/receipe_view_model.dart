@@ -8,7 +8,9 @@ import 'package:sample/utils/api_state.dart';
 class ReceipeViewModel extends ChangeNotifier {
   ApiState apiState = ApiState.loading;
 
-  RecipesRepository recipesRepository = RecipesRepository();
+  RecipesRepository recipesRepository;
+
+  ReceipeViewModel(this.recipesRepository);
 
   // Loading, Sucess, Error
 
