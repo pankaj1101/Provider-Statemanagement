@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sample/respository/recipes_repository.dart';
+import 'package:sample/view/onboarding_view.dart';
 import 'package:sample/view/recipes_view.dart';
 import 'package:sample/view_model/counter_view_model.dart';
 import 'package:sample/view_model/receipe_view_model.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: RecipesView(),
+        home: OnboardingView(),
       ),
     );
   }
